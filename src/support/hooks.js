@@ -5,6 +5,9 @@ const CartPage = require('../pages/cart.page');
 const SignupPage = require('../pages/signup.page');
 const BankingPage = require('../pages/banking.page');
 const WebTablesPage = require('../pages/web-tables.page');
+const SauceLoginPage = require('../pages/sauce-login.page');
+const HerokuLoginPage = require('../pages/heroku-login.page');
+const DemoQaFormPage = require('../pages/demoqa-form.page');
 
 setDefaultTimeout(30000);
 const activeBrowsers = new Set();
@@ -22,6 +25,9 @@ Before(async function () {
   this.signupPage = new SignupPage(this.page);
   this.bankingPage = new BankingPage(this.page);
   this.webTablesPage = new WebTablesPage(this.page);
+  this.sauceLoginPage = new SauceLoginPage(this.page);
+  this.herokuLoginPage = new HerokuLoginPage(this.page);
+  this.demoQaFormPage = new DemoQaFormPage(this.page);
 });
 
 After(async function (scenario) {

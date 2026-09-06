@@ -11,6 +11,9 @@ class CustomWorld extends World {
     this.signupPage = undefined;
     this.bankingPage = undefined;
     this.webTablesPage = undefined;
+    this.sauceLoginPage = undefined;
+    this.herokuLoginPage = undefined;
+    this.demoQaFormPage = undefined;
     this.addedProductName = undefined;
     this.signupResult = undefined;
   }

@@ -10,6 +10,8 @@
     "test:banking:headed": "cross-env HEADED=true cucumber-js --tags \"@banking\"",
     "test:demoqa": "cucumber-js --tags \"@demoqa\"",
     "test:demoqa:headed": "cross-env HEADED=true cucumber-js --tags \"@demoqa\"",
+    "test:web-validation": "cucumber-js --tags \"@web-validation\"",
+    "test:web-validation:headed": "cross-env HEADED=true cucumber-js --tags \"@web-validation\"",
     "test:demoblaze": "cucumber-js --tags \"@demoblaze\"",
     "test:demoblaze:headed": "cross-env HEADED=true cucumber-js --tags \"@demoblaze\"",
     "test:headed": "cross-env HEADED=true cucumber-js",
