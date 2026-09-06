@@ -5,5 +5,27 @@
   "cucumber.glue": [
     "src/steps/**/*.js",
     "src/support/**/*.js"
-  ]
+  ],
+  "cucumberautocomplete.steps": [
+    "src/steps/**/*.js",
+    "src/support/**/*.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.pages": {
+    "homePage": "src/pages/home.page.js",
+    "cartPage": "src/pages/cart.page.js",
+    "signupPage": "src/pages/signup.page.js",
+    "bankingPage": "src/pages/banking.page.js",
+    "webTablesPage": "src/pages/web-tables.page.js",
+    "sauceLoginPage": "src/pages/sauce-login.page.js",
+    "herokuLoginPage": "src/pages/heroku-login.page.js",
+    "demoQaFormPage": "src/pages/demoqa-form.page.js",
+    "testAutomationPracticePage": "src/pages/test-automation-practice.page.js"
+  },
+  "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+  }
 }
