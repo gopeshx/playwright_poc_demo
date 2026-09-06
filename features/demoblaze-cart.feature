@@ -1,3 +1,4 @@
+@demoblaze
 Feature: Add a mobile to the Demoblaze cart
 
   Scenario: The first laptop is available in the cart

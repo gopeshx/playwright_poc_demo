@@ -10,9 +10,13 @@ npx playwright install chromium
 ## Run
 
 ```bash
-npm test
+npm test                  # Run all suites
+npm run test:banking      # Run only @banking scenarios
+npm run test:demoblaze    # Run only @demoblaze scenarios
 npm run test:headed
 ```
+
+The banking and Demoblaze suites are separated with Cucumber tags. Headed variants are available with `npm run test:banking:headed` and `npm run test:demoblaze:headed`.
 
 The Cucumber HTML report is written to `test-results/cucumber-report.html`.
 

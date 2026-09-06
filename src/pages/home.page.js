@@ -58,7 +58,18 @@ class HomePage {
   }
 
   async selectFirstLaptopAndAddToCart() {
+    const previousProductName = await this.productCards.first().locator('.card-title a').innerText().catch(() => '');
     await this.laptopsCategory.click();
+    await this.page.waitForFunction(
+      ({ selector, previousName }) => {
+        const product = document.querySelector(selector);
+        return product && product.textContent.trim() !== previousName;
+      },
+      {
+        selector: '#tbodyid .card .card-title a',
+        previousName: previousProductName
+      }
+    );
     await this.productCards.first().waitFor();
     return this.selectMobileAndAddToCart(0);
   }

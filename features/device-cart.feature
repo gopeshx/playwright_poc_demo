@@ -1,3 +1,4 @@
+@demoblaze
 Feature: Add devices from each Demoblaze section to the cart
 
   Scenario Outline: A randomly selected device is available in the cart

@@ -4,7 +4,12 @@
   "private": true,
   "description": "Playwright JavaScript BDD automation for Demoblaze",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "npm run test:all",
+    "test:all": "cucumber-js",
+    "test:banking": "cucumber-js --tags \"@banking\"",
+    "test:banking:headed": "cross-env HEADED=true cucumber-js --tags \"@banking\"",
+    "test:demoblaze": "cucumber-js --tags \"@demoblaze\"",
+    "test:demoblaze:headed": "cross-env HEADED=true cucumber-js --tags \"@demoblaze\"",
     "test:headed": "cross-env HEADED=true cucumber-js",
     "test:debug": "cross-env PWDEBUG=1 cucumber-js",
     "report": "playwright show-report"

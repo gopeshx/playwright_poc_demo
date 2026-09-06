@@ -1,3 +1,4 @@
+@demoblaze
 Feature: Demoblaze user signup
 
   Scenario: Register a new user with Excel credentials

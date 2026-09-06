@@ -3,6 +3,7 @@ const { chromium } = require('playwright');
 const HomePage = require('../pages/home.page');
 const CartPage = require('../pages/cart.page');
 const SignupPage = require('../pages/signup.page');
+const BankingPage = require('../pages/banking.page');
 
 setDefaultTimeout(30000);
 const activeBrowsers = new Set();
@@ -18,6 +19,7 @@ Before(async function () {
   this.homePage = new HomePage(this.page);
   this.cartPage = new CartPage(this.page);
   this.signupPage = new SignupPage(this.page);
+  this.bankingPage = new BankingPage(this.page);
 });
 
 After(async function (scenario) {

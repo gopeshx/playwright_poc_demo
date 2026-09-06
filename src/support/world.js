@@ -9,6 +9,7 @@ class CustomWorld extends World {
     this.homePage = undefined;
     this.cartPage = undefined;
     this.signupPage = undefined;
+    this.bankingPage = undefined;
     this.addedProductName = undefined;
     this.signupResult = undefined;
   }
