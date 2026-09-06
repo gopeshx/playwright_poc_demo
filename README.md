@@ -13,6 +13,7 @@ npx playwright install chromium
 npm test                  # Run all suites
 npm run test:banking      # Run only @banking scenarios
 npm run test:demoblaze    # Run only @demoblaze scenarios
+npm run test:demoqa       # Run only @demoqa scenarios
 npm run test:headed
 ```
 

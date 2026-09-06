@@ -4,6 +4,7 @@ const HomePage = require('../pages/home.page');
 const CartPage = require('../pages/cart.page');
 const SignupPage = require('../pages/signup.page');
 const BankingPage = require('../pages/banking.page');
+const WebTablesPage = require('../pages/web-tables.page');
 
 setDefaultTimeout(30000);
 const activeBrowsers = new Set();
@@ -20,6 +21,7 @@ Before(async function () {
   this.cartPage = new CartPage(this.page);
   this.signupPage = new SignupPage(this.page);
   this.bankingPage = new BankingPage(this.page);
+  this.webTablesPage = new WebTablesPage(this.page);
 });
 
 After(async function (scenario) {

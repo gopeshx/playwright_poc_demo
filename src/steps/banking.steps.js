@@ -21,6 +21,7 @@ When('I open a {word} account for customer {string}', async function (currency, 
   this.accountMessage = await this.bankingPage.openAccount(firstName, lastName, currency);
   this.accountNumber = this.accountMessage.match(/\d+/)?.[0];
   assert.match(this.accountMessage, /Account created successfully/);
+  assert.ok(this.accountNumber, 'Expected the account creation confirmation to contain an account number');
 });
 
 When('I verify customer {string} is listed', async function (customerName) {
