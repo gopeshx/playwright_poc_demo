@@ -1,0 +1,18 @@
+{
+  "name": "demoblaze-playwright-bdd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright JavaScript BDD automation for Demoblaze",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cross-env HEADED=true cucumber-js",
+    "test:debug": "cross-env PWDEBUG=1 cucumber-js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "cross-env": "^10.0.0",
+    "playwright": "^1.55.0",
+    "xlsx": "^0.18.5"
+  }
+}
