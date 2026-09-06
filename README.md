@@ -14,6 +14,7 @@ npm test                  # Run all suites
 npm run test:banking      # Run only @banking scenarios
 npm run test:demoblaze    # Run only @demoblaze scenarios
 npm run test:demoqa       # Run only @demoqa scenarios
+npm run test:test-automation-practice # Run practice form, alerts, upload, drag/drop, tables
 npm run test:web-validation # Run Sauce Demo, Heroku, and DemoQA validation scenarios
 npm run test:headed
 ```

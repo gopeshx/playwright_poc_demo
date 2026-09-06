@@ -14,6 +14,7 @@ class CustomWorld extends World {
     this.sauceLoginPage = undefined;
     this.herokuLoginPage = undefined;
     this.demoQaFormPage = undefined;
+    this.testAutomationPracticePage = undefined;
     this.addedProductName = undefined;
     this.signupResult = undefined;
   }

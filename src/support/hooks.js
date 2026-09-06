@@ -8,6 +8,7 @@ const WebTablesPage = require('../pages/web-tables.page');
 const SauceLoginPage = require('../pages/sauce-login.page');
 const HerokuLoginPage = require('../pages/heroku-login.page');
 const DemoQaFormPage = require('../pages/demoqa-form.page');
+const TestAutomationPracticePage = require('../pages/test-automation-practice.page');
 
 setDefaultTimeout(30000);
 const activeBrowsers = new Set();
@@ -28,6 +29,7 @@ Before(async function () {
   this.sauceLoginPage = new SauceLoginPage(this.page);
   this.herokuLoginPage = new HerokuLoginPage(this.page);
   this.demoQaFormPage = new DemoQaFormPage(this.page);
+  this.testAutomationPracticePage = new TestAutomationPracticePage(this.page);
 });
 
 After(async function (scenario) {
@@ -39,6 +41,8 @@ After(async function (scenario) {
     await this.context?.close();
     await this.browser?.close();
     activeBrowsers.delete(this.browser);
+    const status = scenario.result?.status === 'PASSED' ? 'PASSED' : scenario.result?.status || 'UNKNOWN';
+    console.log(`[Scenario ${status}] ${scenario.pickle.name}`);
   }
 });
 
